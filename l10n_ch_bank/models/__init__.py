@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+##############################################################################
 #
 #    Author: Nicolas Bessi, Olivier Jossen, Guewen Baconnier
 #    Copyright 2011-2014 Camptocamp SA
@@ -17,23 +18,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-{
-    'name': 'Switzerland - Bank list',
-    'version': '9.0.9.0.0',
-    'author': "Camptocamp, brain-tec AG,Odoo Community Association (OCA)",
-    'category': 'Localisation',
-    'website': 'http://www.camptocamp.com',
-    'license': 'AGPL-3',
-    'summary': 'Banks names, addresses and BIC codes',
-    'depends': ['l10n_ch',
-                'l10n_ch_base_bank',
-                ],
-    'data': ['data/bank.xml',
-             'views/res_config.xml'
-             ],
-    'images': [],
-    'demo': [],
-    'auto_install': False,
-    'installable': True,
-    'application': True,
-}
+##############################################################################
+
+from . import bank
+from . import res_config
